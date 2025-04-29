@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Times New Roman';
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #ECE5B6;
+  color: white;
+ font-size: 1cm;
+ color: white;
+ text-shadow: 3px 3px 0 #333;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #C6BA8B;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #C2B280;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: #ECE5B6;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 1px;
+  text-align: center;
+  background: #C6BA8B;
+}
+.social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: #ccc;
+    margin: 0 8px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+
+img{
+    max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.about-me-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.mine-image-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+}
+
+.mine-image {
+    width: 300px; 
+    height: 150px; 
+    border: 1px solid #ccc;
+}
+
+.title-image {
+  width: 500px;
+  height: auto; 
+  border: 1px solid #ccc;
+}
+
+.title-image-container{   
+  object-fit: cover; 
+  justify-content: center; 
+  align-items: center; 
+  display: flex; 
+  
+}
+.talent-image {
+  width: 500px;
+  height: auto; 
+  border: 1px solid #ccc;
+}
+
+.talent-image-container{   
+  object-fit: cover; 
+  justify-content: center; 
+  align-items: center; 
+  display: flex; 
+  
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Note -->
+<div style="background:#C2B280;padding:5px">
+  <h4 style="text-align:center">Resize the browser window to see the responsive effect.</h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>Liezel Tumagan</h1>
+  <p><b> WEBSITE </b>With a <b>flexible</b> layout.</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">HOME</a>
+  <a href="#">ABOUT</a>
+  <a href="#">CONTACT</a>
+  <a href="#">OFFERS</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h1>About Me</h1>
+    <img src="about me pic.jpg">
+    <p> I am Liezel Tumagan, a life explorer. I explore a lot of things, that is why they think I have a lot of talent. I know some but I'm not good about it.</p>
+    <h2>ME</h2>
+    <p>More Pictures of Mine.</p>
+    <div class="mine-image-container">
+        <img src="pic 1.jpg" alt="cool" class="mine-image">
+      </div>
+      <div class="mine-image-container">
+        <img src="pic 2.jpg" alt="low key" class="mine-image">
+      </div>
+      <div class="mine-image-container">
+        <img src="pic 3.jpg" alt="sun light" class="mine-image">
+      </div>
+      <div class="mine-image-container">
+        <img src="pic 4.jpg" alt="check pic" class="mine-image">
+      </div>
+  </div>
+  <div class="main">
+    <h2>PHOTOGRAPHY</h2>
+    <h5>Island Hoping SAMAL, Nov. 27, 2024</h5>
+    <img src="pictures.jpg" alt="photography pictures" class="title-image">
+    <p>Best SHOTS of Mine</p>
+    <p>Last November 2024, my girlfriend and I went island hopping with her friends and classmates.  Of course, we had a tour guide for our island hopping adventure, and he was very knowledgeable and presented the information about the places we visited in a very nice way.  I brought my digital camera to capture pictures of the islands we visited, and I'm so happy with the beautiful photos I took.  But it's not about the pictures, it's about the experience.</p>
+    <br>
+    <h2>TALENTS</h2>
+    <h5>Photos: 2024 - 2025 </h5>
+    <img src="talent.jpg" alt="My Talent Pictures" class="talent-image">
+    <p>These are some of my talents thet I'm willing to share...</p>
+    <p>They said I was gifted because I have many talents. I can dance, sing, play different instruments, and I'm also a sporty person. But for me, I know all these talents because I'm curious about everything. If something piques my interest, I immediately wanted to learn how to do it. That's the truth, and even though I know a lot of things, I still don't know where I truly belong.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <h3>All rights Recieved</h3>
+<div class="social-icons">
+    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+
+
+
+</body>
+</html>
+
